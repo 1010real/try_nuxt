@@ -5,10 +5,11 @@
   "author": "1010real",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxt", // dev用のビルドと開発用サーバ立ち上げ
+    "build": "nuxt build", // production向けbuildを行う
+    "start": "nuxt start", // productionモードで動作させる（動作の最終確認）
+    "generate": "nuxt generate" // distributionを作成する（distフォルダ配下にできる）
+    // mode:universalの場合はnodejsが動作するサーバにホストしないと動作しない（当たり前）mode:spaなら静的ホスティングでも行ける
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.8.0",
